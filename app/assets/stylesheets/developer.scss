@@ -1,0 +1,76 @@
+
+
+body {
+    background: black;
+    height: 100%;
+}
+
+.uos_likelion_logo{
+    height: 200px;
+    width: 200px;
+}
+
+// event CSS start
+.dev_person_head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dev_header{
+    font-size: 60px;
+    color: yellow;
+    margin: 0;
+    text-align: center;
+    font-family:'drfont_daraehand';
+}
+.dev_person{
+    background: white;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    // box-shadow: 10px 10px #c0c0c0;
+    border-radius: 10px 10px;
+    height: auto;
+    padding: 15px;
+}
+.dev_person_img{
+    height: 200px;
+    width: 200px;
+}
+.dev_person_name{
+    color: black;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Do Hyeon';
+    line-height: 1;
+}
+.dev_person_info{
+    color: gray;
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Do Hyeon';
+    line-height: 1;
+}
+.dev_person_content{
+    font-size: 40px;
+    margin: 0;
+    color: black;
+    font-family: 'Sunflower';
+}
+.dev_person_content_another{
+    font-size: 33px;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-family: 'Sunflower';
+    text-align: center;
+}
+.event_footer{
+    padding-bottom: 230px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Sunflower';
+}
+// event CSS end

@@ -1,0 +1,182 @@
+
+<div class="lineup_wrap">
+    <div id="mask"></div>
+    <header>
+        <div class="lineup_header clearfix">
+            <img class = "lineup_logo_img"src="<%= asset_path 'logo.png' %>"/>
+            <div class="lineup_uos"><span class='lineup_uos_font'><a href="#modalLayer" class="modalLink">2018 시립대 축제 라인업</a></span>click</div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="lineup_main">
+            <div class="lineup_first_day">
+                <p class="day">5.15(TUE)</p>
+                <div class="lineup_singer">
+                    <p class="singer">미교<span class="lineup_time">  19:30</span></p>
+                    <p class="singer">10cm <span class="lineup_time">  20:00</span></p>
+                </div>
+                <hr class="lineup_line"><br>
+            </div>
+            
+            <div class="lineup_back">
+                <div class="lineup_second_day">
+                  <p class="day">5.17(THU)</p>
+                  <div class="lineup_singer">
+                      <p class="singer">팔로알토 / 레디 / 허클베리피 <span class="lineup_time">  21:00</span></p>
+                      <p class="singer">오마이걸 <span class="lineup_time">  22:00</span></p>
+                      <p class="singer">박명수 <span class="lineup_time">   22:00</p></p>
+                  </div>
+                  <hr class="lineup_line"><br>
+            </div>
+            <div class="lineup_third_day">
+                <p class="day">5.18(FRI)</p>
+                <div class="lineup_singer">
+                    <p class="singer">소야 / 건민 X 희도<span class="lineup_time">  20:30</span></p>
+                    <p class="singer">딥플로우 / 던밀스 / 넉살<span class="lineup_time">  21:00</span></p>
+                    <p class="singer">헤이즈<span class="lineup_time">  22:00</span></p>
+                </div>
+                <hr class="lineup_line"><br>
+            </div>
+                
+            
+            <div>
+                <p class="lineup_place">장소 : 대강당 앞 무대</p>
+            </div>
+            </div>
+            
+        </div>
+        
+        <footer class='event_footer'>
+          <hr>
+          <img src='<%= asset_path 'UOS_LIKELION_ye.png' %> ' class='uos_likelion_logo'></img>
+          <br>페이지 제작: 서울시립대학교 멋쟁이사자처럼<br>
+          문범우, 강솔, 박건주, 박민승, 신민정, 차상원, 최희재<br>
+          위의 모든 내용은 서울시립대학교 총학생회 페이스북에서 참고하였습니다.<br>
+          실시간으로 변동 되는 사항에 대해서는 바로 반영되지 않을 수 있기 때문에<br>
+          정확한 정보를 얻고 싶으시다면 아래 링크를 클릭하세요.<br>
+          <a href='https://www.facebook.com/2018-서울시립대학교-축제-100th-to-the-Future-607287032763488/' target="_blank"><span class='event_footer_link'>(출처: https://www.facebook.com/2018-서울시립대학교-축제-100th-to-the-Future-607287032763488/)<span></a>
+          
+        </footer>
+        
+    </main>
+    
+    
+
+  <div class="nevi">
+    <a href = "/festival"><div class="nev_block nimg1">
+    </div></a>
+    <a href = "/festival/schedule"><div class="nev_block nimg4">
+    </div></a>
+    <a href = "/festival/booth"><div class="nev_block nimg3">
+    </div></a>
+    
+    <a href = "/festival/lineup"> <div class="nev_block nimg2">
+    </div></a>
+    <a href = "/festival/event"><div class="nev_block nimg5">
+    </div></a>
+    <a href = "/festival/foodtruck"><div class="nev_block nimg6">
+    </div></a>
+    
+  </div>
+</div>
+
+ <!--스크립트 태그-->
+   <script>
+    $(document).ready(function(){
+        $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5, nimg6").click(function(){
+          $(this).animate({
+            opacity: '1.0',
+            height: '150px',
+            width: '150px'
+          });
+        });
+        
+    })
+    </script>
+<!-------------------------------------------------------- 모달창 ------------------------------------------->
+
+<div id="modalLayer">
+    <div class="modalContent">
+        <div class="lineup_body_wrap">
+      <p class="lineup_table_title">서울시립대 메인스테이지 라인업 공개</p>
+      <table width="1000"height="1000"class="lineup_table">
+        <tbody>
+          <tr>
+            <td class="lineup_explain">
+              <img class="lineup_img" src="<%= asset_path 'performance.jpg' %>" alt="">
+              </td>
+            <td colspan="2" rowspan="2"><img class="lineup_img" src="<%= asset_path '10cm.png' %>"  alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img"src="<%= asset_path '미교1.jpg' %>"" alt=""></td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2"><img class="lineup_img" src="<%= asset_path '오마이걸.jpg' %>" alt=""></td>
+            <td class="lineup_explain"><img class="lineup_img" src="<%= asset_path 'edm.jpg' %>" alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img"src="<%= asset_path '박명수.jpg' %>" alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img" src="<%= asset_path '팔로알토.jpg' %>" alt=""></td>
+            <td><img class="lineup_img"src="<%= asset_path '레디.jpg' %>" alt=""></td>
+            <td><img class="lineup_img"src="<%= asset_path '허클베리피.jpg' %>" alt=""></td>
+          </tr>
+
+
+          <tr>
+            <td rowspan="2" colspan="2"><img class="lineup_img" src="<%= asset_path '헤이즈.jpg' %>" alt=""></td>
+            <td><img class="lineup_img" src="<%= asset_path '건민희도.jpg' %>" alt=""></td>
+          </tr>
+
+          <tr>
+            <td><img class="lineup_img"src="<%= asset_path '소야.jpg' %>" alt=""></td>
+          </tr>
+
+          <tr>
+            <td><img class="lineup_img"src="<%= asset_path '딥플로우.jpg' %>" alt=""></td>
+            <td><img class="lineup_img"src="<%= asset_path '던밀스.jpg' %>" alt=""></td>
+            <td><img class="lineup_img"src="<%= asset_path '넉살.jpg' %>" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        
+        <button type="button">닫기</button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+      
+      
+      var modalLayer = $("#modalLayer");
+      var modalLink = $(".modalLink");
+      var modalCont = $(".modalContent");
+      var marginLeft = modalCont.outerWidth()/2;
+      var marginTop = modalCont.outerHeight()/2;
+      var maskHeight = $(document).height();  
+      var maskWidth = $(window).width();  
+
+
+      modalLink.click(function(){
+        modalLayer.fadeIn("slow");
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+        // $('#mask').fadeIn(1000);
+        $('#mask').fadeTo("slow",0.8); 
+        // lineup.fadeout("slow");
+        modalCont.css({"margin-top" : -marginTop, "margin-left" : -marginLeft});
+        $(this).blur();
+        $(".modalContent > a").focus(); 
+        return false;
+      });
+
+      $(".modalContent > button").click(function(){
+        $('#mask').fadeOut(1000);
+        modalLayer.fadeOut("slow");
+        modalLink.focus();
+      });		
+});
+</script>
